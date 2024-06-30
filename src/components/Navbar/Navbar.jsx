@@ -1,8 +1,8 @@
 import React from 'react'
 import logo from '../../assets/netflix-emblam.png'
-import searchIcon from '../../assets/search.png'
-import bellIcon from '../../assets/bell.png'
-import droparrowIcon from '../../assets/down-arrow.png'
+import searchIcon from '../../assets/search_icon.svg'
+import bellIcon from '../../assets/bell_icon.svg'
+import droparrowIcon from '../../assets/caret_icon.svg'
 import profilePic from '../../assets/netflix-profilePic.jpg'
 import './Navbar.css'
 function Navbar() {
