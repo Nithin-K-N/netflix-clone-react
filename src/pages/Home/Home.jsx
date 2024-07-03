@@ -6,6 +6,7 @@ import './Home.css'
 import play_icon from '../../assets/play_icon.png'
 import info_icon from '../../assets/info_icon.png'
 import TitleCard from '../../components/TitleCard/TitleCard'
+import Footer from '../../components/Footer/Footer'
 
 function Home() {
   return (
@@ -26,9 +27,12 @@ function Home() {
             </div>
         </div>
         <div className="more-cards">
-            <TitleCard title={"TV shows"}/>
-            <TitleCard title={"Movies"}/>
-            <TitleCard title={"Suggestions"}/>
+            <TitleCard title={"Popular"} category={"popular"}/>
+            <TitleCard title={"Top Rated"} category={"top_rated"}/>
+            <TitleCard title={"Upcoming"} category={"upcoming"}/>
+        </div>
+        <div className="footer">
+            <Footer/>
         </div>
     </div>
   )
