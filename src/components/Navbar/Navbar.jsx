@@ -5,9 +5,12 @@ import bellIcon from '../../assets/bell_icon.svg'
 import droparrowIcon from '../../assets/caret_icon.svg'
 import profilePic from '../../assets/netflix-profilePic.jpg'
 import './Navbar.css'
+import { useNavigate } from 'react-router-dom'
+import { logOut } from '../../firebase'
 
 function Navbar() {
 
+    // const nav = useNavigate()
     const navRef = useRef()
 
     useEffect(()=>{
@@ -46,7 +49,7 @@ function Navbar() {
             <div className="navbar-profile">
                 <img src={profilePic} alt="" className='profilePic'/>
                 <img src={droparrowIcon} alt='' className='droparrow'/>
-                <div className="dropdown">
+                <div className="dropdown" onClick={logOut()}>
                     <p>sign out</p>
                 </div>
             </div>
